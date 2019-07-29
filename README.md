@@ -6,11 +6,11 @@ This app was built to help the [Team 40x40](https://fortybyforty2019.com/) runne
 
 Try it out here: [http://gnrcomparo.appspot.com](https://gnrcomparo.appspot.com)
 
-It's built with Laravel & Vue. I'd been using these for work and enjoying the mix, and wanted to try it out for prototyping a brand new app from scratch. It has loads of project generation scaffolding to get something up and running very quickly. This current version does not make that much use of Laravel itself, but nonetheless the process seemed worthwhile: I got server-side routing and webpack for free and it's nice knowing there's flexibility to do other stuff in future. It can always be stripped back in future when I know what if anything will be added to the app.
+It's built with Laravel & Vue. I'd been using these for work and enjoying the mix, and wanted to try it out for prototyping a brand new app from scratch. It has loads of project generation scaffolding to get something up and running very quickly. This current version does not make that much use of Laravel itself, but nonetheless the process seemed worthwhile: I got server-side routing and webpack for free and it's nice knowing there's flexibility to do other stuff in future. It can always be stripped back when I know what if anything will be added to the app.
 
 The one thing I really do want to add is Strava integration to help compare your Strava route to the GNR without downloading the GPX. It'll be interesting to learn the Strava APIs.
 
-I deployed it on Google App Engine (php7 standard environment) because:
+I deployed it on Google App Engine (PHP7 standard environment) because:
 
 - it has a generous free usage tier (in the standard environment)
 - it provides a handy domain name
