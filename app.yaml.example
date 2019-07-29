@@ -1,0 +1,20 @@
+runtime: php72
+
+handlers:
+  - url: /js
+    static_dir: public/js
+  - url: /css
+    static_dir: public/css
+  - url: /img
+    static_dir: public/img
+  - url: /gpx
+    static_dir: public/gpx
+  - url: /fonts
+    static_dir: public/fonts
+
+env_variables:
+  APP_KEY: base64:your_key_here
+  APP_STORAGE: /tmp
+  VIEW_COMPILED_PATH: /tmp
+  SESSION_DRIVER: cookie
+

@@ -1,0 +1,43 @@
+// Body colors
+$body-bg: #efefef;
+$body-color: $text;
+
+// Fonts
+$font-family-sans-serif: "Nunito Sans", sans-serif;
+$font-size-base: 0.9rem;
+
+// Make the border radiuses a bit bigger.
+$border-radius-sm:            0 !default;
+$border-radius:               0 !default;
+$border-radius-lg:            0 !default;
+
+// Map the Bootstrap theme variables to Aspirations colors.
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary":    $app-primary,
+    "secondary":  $app-secondary,
+    "success":    $app-success,
+    "info":       $app-info,
+    "warning":    $app-warning,
+    "danger":     $app-danger,
+    "light":      $app-light,
+    "dark":       $app-dark
+  ),
+  $theme-colors
+);
+
+// Turn on shadows. This is quite subtle, eg used for active buttons and not
+// shadows surrounding components, like the one we want around cards. For the
+// mixin to work, it is easier to turn them on globally, then disable them
+// where needed.
+$enable-shadows: false;
+
+// Font sizes.
+$enable-responsive-font-sizes: true;
+
+// Heading weights.
+$headings-font-weight: 700;
+
+// Darken card headers slightly.
+$card-cap-bg: rgba($black, .05);

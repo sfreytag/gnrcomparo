@@ -1,0 +1,62 @@
+.ol-attribution {
+    background-color: $white;
+    background: $white;
+    border: 1px solid $app-primary;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    font-weight: normal;
+    z-index: 100;
+
+    button {
+        background-color: $app-primary;
+        background: $app-primary;
+        color: white;
+        border: 0px;
+        font-weight: normal;
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 0px;
+        margin:0px;
+        height: 40px;
+        width: 40px;
+    }
+
+    ul, li {
+        list-style-type: none;
+        padding: 3px;
+        margin: 0;
+        display: inline-block;
+        font-size: 0.75rem;
+    }
+
+    &.ol-collapsed ul,
+    &:not(.ol-collapsed) button:hover [role=tooltip],
+    span[role=tooltip] {
+        display:none
+    }
+}
+
+#your-map {
+    .ol-attribution {
+        display: none;
+    }
+}
+
+.ol-zoom {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: $app-primary;
+    .ol-zoom-in, .ol-zoom-out {
+        background: $app-primary;
+        color: white;
+        border: 0;
+        width: 40px;
+        height: 40px;
+    }
+}
