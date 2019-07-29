@@ -21,7 +21,7 @@
 # NPM:
 /node_modules/
 
-# Mac thinbgs
+# Mac things
 .DS_Store
 
 
