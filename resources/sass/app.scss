@@ -3,6 +3,8 @@
 
 // Variables
 @import 'variables';
+
+// Customise bootstrap.
 @import 'bootstrap';
 
 // Bootstrap
@@ -12,13 +14,13 @@
 @import 'ol.scss';
 
 // Font awesome
-// Font awesome
 @import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 
 // Misc!
+// @todo Refactor some tidier when there's more here.
 *:focus {
     outline: 0 !important;
 }
