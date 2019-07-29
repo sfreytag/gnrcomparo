@@ -1,5 +1,4 @@
-
-# GNR Comparo
+# GNR Comparo
 
 Compare your run with the Great North Run! See how far through you got. Which of your local landmarks match up to iconic things on the route? Maybe passing the corner shop is like crossing the Tyne Bridge?
 
