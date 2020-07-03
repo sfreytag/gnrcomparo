@@ -21,7 +21,7 @@ from a GPX file.
 </style>
 
 <script>
-    import {Icon, Stroke, Style} from 'ol/style.js';
+    import {Icon, Style} from 'ol/style.js';
     import {defaults as defaultControls} from 'ol/control.js';
     import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer.js';
     import VectorSource from 'ol/source/Vector.js';
@@ -89,7 +89,7 @@ from a GPX file.
             url: component.gpxData
         });
 
-        src.once("change", function(evt) {
+        src.once("change", function() {
             let feature = src.getFeatures()[0];
             let geom = feature.getGeometry();
             if (geom.getType() == "MultiLineString")
@@ -97,11 +97,10 @@ from a GPX file.
             const coords = geom.getCoordinates();
 
             const retain = 5;
-            let coord = 0, i = 0, trimmed = [];
-            while (coord = coords[i]) {
+            let trimmed = [];
+            coords.forEach((coord, i) => {
                 if (i % retain == 0) trimmed.push(coord);
-                i++;
-            }
+            })
 
             geom.setCoordinates(trimmed);
             feature.setGeometry(geom);

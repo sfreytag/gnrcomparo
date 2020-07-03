@@ -18,7 +18,7 @@ This is a component to wrap on OpenLayers map, which shows the GNR race route.
 </style>
 
 <script>
-    import {Icon, Stroke, Style} from 'ol/style.js';
+    import {Icon, Style} from 'ol/style.js';
     import {defaults as defaultControls} from 'ol/control.js';
     import {Tile as TileLayer, Vector as VectorLayer} from 'ol/layer.js';
     import VectorSource from 'ol/source/Vector.js';
@@ -27,7 +27,6 @@ This is a component to wrap on OpenLayers map, which shows the GNR race route.
     import GPX from 'ol/format/GPX.js';
     import Feature from 'ol/Feature.js';
     import Point from 'ol/geom/Point.js';
-    import {getLength} from 'ol/sphere.js';
     import ImageStatic from 'ol/source/ImageStatic.js';
     import ImageLayer from 'ol/layer/Image.js';
 
@@ -46,9 +45,6 @@ This is a component to wrap on OpenLayers map, which shows the GNR race route.
     // Layers
     let gpx_layer;
     let marker_layer;
-
-    // A reference to this component
-    let component;
 
     // Styles for OpenLayers elements used in the map rendered by this
     // component.
@@ -70,7 +66,7 @@ This is a component to wrap on OpenLayers map, which shows the GNR race route.
             format: new GPX()
         });
 
-        gnr_src.once("change", function(evt) {
+        gnr_src.once("change", function() {
             setCenter(0);
         });
         gpx_layer = new VectorLayer({source: gnr_src,});
@@ -145,7 +141,6 @@ This is a component to wrap on OpenLayers map, which shows the GNR race route.
             distance: Number
         },
         mounted: function() {
-            component = this;
             buildMap();
         },
         watch: {

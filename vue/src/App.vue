@@ -3,7 +3,7 @@
 GNRComparo
 ----------
 
-The parent Vue component for this app, that martials the tree of child
+The parent Vue component for this app, that marshalls the tree of child
 components and deals with user interaction.
 
 -->
@@ -61,6 +61,10 @@ components and deals with user interaction.
     </div>
 </template>
 
+<style lang="scss">
+    @import './scss/app.scss';
+</style>
+
 <style lang="scss" scoped>
 
 .gnr-cont {
@@ -100,9 +104,9 @@ components and deals with user interaction.
 </style>
 
 <script>
-    import GPXLoader from './GPXLoader.vue';
-    import YourMap from './YourMap.vue';
-    import GNRMap from './GNRMap.vue';
+    import GPXLoader from '@/components/GPXLoader.vue';
+    import YourMap from '@/components/YourMap.vue';
+    import GNRMap from '@/components/GNRMap.vue';
 
     export default {
         components: {
