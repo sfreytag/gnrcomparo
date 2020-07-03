@@ -1,0 +1,17 @@
+# Ignore this file, obviously:
+.gcloudignore
+
+# Git stuff:
+.git
+.gitignore
+.gitattributes
+.gitkeep
+
+# PHP Composer dependencies:
+/vendor/
+
+# Storage
+/storage/
+
+# Mac things and other meta files:
+.DS_Store
