@@ -16,4 +16,4 @@ I deployed it on Google App Engine (PHP7 standard environment) because:
 - it provides a handy domain name
 - I use it already for [Simon Likes Maps](https://www.simonlikesmaps.com) with the Python2.7 runtime and I wanted to try out the PHP runtime
 
-And I've made it open source because it's a good example of my work with PHP & Vue and maps. These are technologies I really enjooy working with, so it makes a good portfolio project for people to have a look at the code I can produce.
+And I've made it open source because it's a good example of my work with PHP & Vue, and maps.
