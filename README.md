@@ -6,9 +6,9 @@ This app was built to help the [Team 40x40](https://fortybyforty2019.com/) runne
 
 Try it out here: [http://gnrcomparo.appspot.com](https://gnrcomparo.appspot.com)
 
-It's built with Laravel & Vue. I'd been using these for work and enjoying the mix, and wanted to try it out for prototyping a brand new app from scratch. It has loads of project generation scaffolding to get something up and running very quickly. This current version does not make that much use of Laravel itself, but nonetheless the process seemed worthwhile: I got server-side routing and webpack for free and it's nice knowing there's flexibility to do other stuff in future. It can always be stripped back when I know what if anything will be added to the app.
+In 2019 it was built with Laravel & Vue. I'd been using these for work and enjoying the mix, and wanted to try it out for prototyping a brand new app from scratch. In the end, it only used Laravel as a front controller to the Vue build.
 
-The one thing I really do want to add is Strava integration to help compare your Strava route to the GNR without downloading the GPX. It'll be interesting to learn the Strava APIs.
+In 2020, I have split the Vue code out of Laravel/laravel-mix and repackaged it as a standalone Vue app. Laravel has been replaced by Lumen. Google App Engine only allows one app entry point, so Lumen still works as a simple front controller to point to the Vue build. Lumen should still provide enough of a framework to coordinate the Strava API interaction and provide endpoints for that back to the Vue app.
 
 I deployed it on Google App Engine (PHP7 standard environment) because:
 
@@ -16,4 +16,4 @@ I deployed it on Google App Engine (PHP7 standard environment) because:
 - it provides a handy domain name
 - I use it already for [Simon Likes Maps](https://www.simonlikesmaps.com) with the Python2.7 runtime and I wanted to try out the PHP runtime
 
-And I've made it open source because it's a good example of my work with Laravel & Vue, and maps. These are technologies I really enjooy working with, so it makes a good portfolio project for people to have a look at the code I can produce.
+And I've made it open source because it's a good example of my work with PHP & Vue and maps. These are technologies I really enjooy working with, so it makes a good portfolio project for people to have a look at the code I can produce.
